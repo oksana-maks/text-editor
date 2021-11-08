@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="box_one">
+        <div class="box_text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+
+        <form name="choose" id="choose">
+            <h2>Choose what you want:</h2>
+            <input type="radio" name="choose_form" value="table"> table
+            <input type="radio" name="choose_form" value="list" style="margin-left: 15px;"> list
+        </form>
+
+        <form name="table" id="table">
+            <label for="TR">Count TR:</label>
+            <input type="text" name="TR" placeholder="Count TR" style="width: 500px;">
+            <br>
+            <label for="TD">Count TD:</label>
+            <input type="text" name="TD" placeholder="Count TD" style="width: 500px;">
+            <h4>Add style to your table:</h4>
+            <label for="width_of_TD"> Width of TD:</label>
+            <input type="text" name="width_of_TD" placeholder="Width of TD" style="width: 500px;">
+            <br>
+            <label for="height_of_TD">Height of TD:</label>
+            <input type="text" name="height_of_TD" placeholder="Height of TD" style="width: 500px;">
+            <br>
+            <label for="width_of_border">Width of border:</label>
+            <input type="text" name="width_of_border" placeholder="Width" style="width: 70px;">
+            <label for="type_of_border" style="margin-left: 16px;">Type of border:</label>
+            <select name="type_of_border" style="width: 70px;">
+                <option value="solid"> solid</option>
+                <option value="dotted"> dotted </option>
+                <option value="dashed"> dashed</option>
+                <option value="double"> double</option>
+                <option value="ridge"> ridge</option>
+            </select>
+            <label for="color_of_border" style="margin-left: 18px;">Color of border:</label>
+            <select name="color_of_border" style="width: 70px;">
+                <option value="black"> black </option>
+                <option value="red"> red </option>
+                <option value="blue"> blue</option>
+                <option value="green"> green </option>
+            </select>
+            <button type="button" name="create_table" id="create_table"> Create table</button>
+        </form>
+
+        <form name="list" id="list">
+            <label for="count_li">Count Li:</label>
+            <input type="text" name="count_li" placeholder="Count Li" style="width: 500px;">
+            <br>
+            <label for="type_of_marks">Type of marks:</label>
+            <select name="type_of_marks" style="width: 500px;">
+                <option value="circle"> circle</option>
+                <option value="disc"> disc </option>
+                <option value="square"> square</option>
+            </select>
+            <button type="button" name="create_list" id="create_list"> Create list</button>
+        </form>
+    </div>
+
+    <div class="box_two">
+        <button type="button" value="edit" id="edit">edit</button>
+        <button type="button" value="style" id="style">style</button>
+    </div>
+
+    <div class="box_three">
+        <form name='form_text' id="form_text">
+            <textarea name="my_text" cols="30" rows="10"></textarea>
+            <br>
+            <button type="button" id="add">add</button>
+            <button type="button" id="save">save</button>
+        </form>
+
+        <form name='form_style' id="form_style">
+            <p>Font Size:</p>
+            <input type="radio" name="size" value="12px"> 12px
+            <input type="radio" name="size" value="14px" style="margin-left: 15px;"> 14px
+            <input type="radio" name="size" value="16px" style="margin-left: 15px;"> 16px
+            <input type="radio" name="size" value="18px" style="margin-left: 15px;"> 18px
+            <input type="radio" name="size" value="20px" style="margin-left: 15px;"> 20px
+            <p>Font Family:</p>
+            <select>
+                <option disabled selected>Choose option</option>
+                <option value="cursive">cursive</option>
+                <option value="fantasy">fantasy</option>
+                <option value="monospase">monospase</option>
+                <option value="sans-serif">sans-serif</option>
+                <i class="uil uil-sort"></i>
+            </select>
+            <p>Colors:</p>
+            <button type="button" id="color_text">Color of Text</button>
+            <button type="button" id="bacground">Background color</button>
+            <p>Style:</p>
+            <input type="checkbox" value="bold" name="bold"> Bold text
+            <input type="checkbox" value="cursive_text" name="cursive" style="margin-left: 15px;"> Cursive text
+        </form>
+        <div class="myColor">
+            <div class="row">
+                <div class="box" style="background: red;"></div>
+                <div class="box" style="background:seagreen;"></div>
+                <div class="box" style="background:blueviolet;"></div>
+            </div>
+            <div class="row">
+                <div class="box" style="background:coral;"></div>
+                <div class="box" style="background:darkgreen"></div>
+                <div class="box" style="background:darkorange;"></div>
+            </div>
+            <div class="row">
+                <div class="box" style="background:darkslateblue;"></div>
+                <div class="box" style="background:grey"></div>
+                <div class="box" style="background:sienna"></div>
+            </div>
+        </div>
+        <div class="myColor_background">
+            <div class="row">
+                <div class="box" style="background: rgb(156, 57, 57);"></div>
+                <div class="box" style="background:seagreen;"></div>
+                <div class="box" style="background:blueviolet;"></div>
+            </div>
+            <div class="row">
+                <div class="box" style="background:coral;"></div>
+                <div class="box" style="background:darkgreen"></div>
+                <div class="box" style="background:darkorange;"></div>
+            </div>
+            <div class="row">
+                <div class="box" style="background:darkslateblue;"></div>
+                <div class="box" style="background:grey"></div>
+                <div class="box" style="background:sienna"></div>
+            </div>
+        </div>
+    </div>  
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,288 @@
+* {
+    padding: 0;
+    margin: 0;
+    border-spacing: 0;
+}
+
+body {    
+    display: flex;
+    flex-direction: column;    
+    align-items:center;
+}
+
+.box_three {    
+    margin: 20px;
+}
+
+.box_four {
+    display: none;      
+}
+
+.box_text {
+    min-height: 260px;
+}
+
+.box_one {
+    margin: 25px 0 20px;    
+}
+
+.box_one p {
+    padding: 15px 0 5px 15px;    
+}
+
+.box_one, .box_three {
+    background-color: rgb(226, 228, 228);
+    width: 700px;
+    min-height: 260px;    
+    border: 1px solid rgb(210, 211, 211);
+    border-radius: 3px;
+}
+
+.box_two button[type="button"] {
+    width: 60px;
+    height: 30px;
+}
+
+#edit {
+    background-color:rgb(230, 201, 41);
+    border: 1px solid rgb(224, 129, 12);
+    border-radius: 3px;    
+}
+
+#edit:hover {
+    background-color:rgb(224, 129, 12);
+    box-shadow: 0 0 8px #c2c0c7;
+    cursor: pointer;
+}
+
+#style {
+    background-color:rgb(41, 186, 230);
+    border: 1px solid rgb(16, 113, 224);
+    border-radius: 3px; 
+    color: white;
+}
+
+#style:hover {
+    background-color:rgb(16, 113, 224);
+    box-shadow: 0 0 8px #c2c0c7;
+    cursor: pointer;
+}
+
+#form_text {
+    display: none;
+}
+
+textarea {
+    margin: 15px 0 5px 25px;
+    width: 650px;
+    border: 1px solid rgb(210, 211, 211);
+    border-radius: 3px; 
+}
+
+textarea:focus{
+    outline: none;
+    box-shadow: 0 0 0 2px #2785F7;
+}
+
+#add {
+    margin-left: 25px;
+    background-color:rgb(230, 27, 61);
+    border: 1px solid rgb(207, 15, 63);
+    border-radius: 3px; 
+    color: white;
+}
+
+#add:hover {
+    background-color:rgb(207, 15, 63);
+    box-shadow: 0 0 8px #c2c0c7;
+    cursor: pointer;
+}
+
+#save {    
+    background-color:rgb(29, 179, 54);
+    border: 1px solid rgb(14, 129, 29);
+    border-radius: 3px; 
+    color: white;
+}
+
+#save:hover {
+    background-color:rgb(14, 129, 29);
+    box-shadow: 0 0 8px #c2c0c7;
+    cursor: pointer;
+}
+
+.box_three button[type="button"] {
+    width: 60px;
+    height: 30px;
+}
+
+#form_style {
+    padding: 10px 0 5px 15px;
+    float: left;
+    margin-right: 100px;
+    display: none;
+}
+
+#form_style p {
+    padding: 8px 0 8px;
+    font-weight: bold;
+}
+
+#form_style button[type="button"] {
+    width: 120px;
+    background-color: rgb(105, 104, 104);
+    border: 1px solid rgb(105, 104, 104);
+    color: white;
+    border-radius: 3px; 
+}
+
+#form_style button[type="button"]:hover {
+    cursor: pointer;
+}
+
+#form_style select {
+    width: 300px;
+    height: 30px;
+    appearance: none;
+    background: url(./icons/sort-arrows.png) no-repeat 280px white;
+    padding-left: 10px;    
+}
+
+.row {
+    display: flex;
+}
+
+.box {
+    border: 1px solid #000;
+    width: 50px;
+    height: 50px; 
+}
+
+.myColor, .myColor_background {
+    margin: 50px;
+    display: none;   
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#choose {
+    display: none;
+    padding: 15px 0 0 25px;
+}
+
+#choose h2 {
+    margin-bottom: 10px;
+}
+
+#table {
+    display: none;
+    padding: 15px 0 0 25px;
+}
+
+#table input, #table h4 {
+    margin-bottom: 15px;
+}
+
+#table input {
+    height: 30px;
+    margin-left: 10px;  
+    border: 1px solid #afafaf;
+    box-sizing: border-box;
+    border-radius: 5px; 
+    padding-left: 5px; 
+} 
+
+label {
+    display: inline-block;
+    width: 120px;
+    text-align: left;    
+}
+
+#table input[type="text"]:focus{
+    outline: none;
+    box-shadow: 0 0 0 2px #2785F7;
+}
+
+#table select {
+    border: 1px solid #afafaf;
+    box-sizing: border-box;
+    border-radius: 5px;  
+    height: 30px;  
+}
+
+#table select:focus{
+    outline: none;
+    box-shadow: 0 0 0 2px #2785F7;
+}
+
+#table button[type="button"] {
+    background-color:rgb(29, 179, 54);
+    border: 1px solid rgb(14, 129, 29);
+    border-radius: 3px; 
+    color: white;
+    height: 40px;
+    width: 100px;
+}
+
+#table button[type="button"]:hover {
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 15px 0 0 15px;
+}
+
+#list {
+    display: none;
+    padding: 15px 0 0 25px;
+}
+
+#list input {
+    height: 30px;
+    border: 1px solid #afafaf;
+    box-sizing: border-box;
+    border-radius: 5px; 
+    padding-left: 5px; 
+}
+
+#list input[type="text"]:focus{
+    outline: none;
+    box-shadow: 0 0 0 2px #2785F7;
+}
+
+#list select {
+    margin-top: 10px;
+    border: 1px solid #afafaf;
+    box-sizing: border-box;
+    border-radius: 5px;  
+    height: 30px;      
+}
+
+#list select:focus{
+    outline: none;
+    box-shadow: 0 0 0 2px #2785F7;    
+}
+
+#list button[type="button"] {
+    margin-top: 30px;
+    background-color:rgb(29, 179, 54);
+    border: 1px solid rgb(14, 129, 29);
+    border-radius: 3px; 
+    color: white;
+    height: 40px;
+    width: 100px;
+}
+
+#list button[type="button"]:hover {
+    cursor: pointer;
+}
+
+li {
+    margin: 5px 0 0 15px;    
+}
+
+ol {
+    margin-left: 15px;    
+}
